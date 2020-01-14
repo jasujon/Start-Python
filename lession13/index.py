@@ -1,4 +1,4 @@
-#-----------------------If StateMent-------------------- 
+##-----------------------If StateMent-------------------- 
 
 # age = input("Enter Your Age : ")
 # age = int(age)
@@ -6,17 +6,34 @@
 #     #print("Line a ")
 #     print("You Are Above 14")
 
-#-----------------------Pass StateMent--------------------  
+##-----------------------Pass StateMent--------------------  
 
 # x = 18
 # if x>18:
 #     pass
 # #output null
 
-#-----------------------if else StateMent-------------------- 
+##-----------------------if else StateMent-------------------- 
 
-age = int(input("Enter Your Age : "))
-if age >= 10:
-    print("You Can Play The Game")
+# age = int(input("Enter Your Age : "))
+# if age >= 10:
+#     print("You Can Play The Game")
+# else:
+#     print("You Can't Play The Game")
+
+
+##-----------------------Nested If-else StateMent-------------------- 
+
+warning_number = 50
+user_input = input("Guess A Number b/w 1 To 100 : ")
+user_input = int(user_input)     #string value convert integer
+
+if(warning_number == user_input):
+    print("You Win !!!!!")
 else:
-    print("You Can't Play The Game")
+    if(user_input < warning_number):
+        print("Too Low")
+    else:
+        print("Too High")
+
+
