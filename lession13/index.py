@@ -53,3 +53,9 @@
 # else:
 #     print("Condition False")
     
+user_name =input ("Enter Your Name : ")
+user_age  = int(input("Enter Your Age : "))
+if(user_age >= 15 and (user_name[0] == 'a' or user_name[0] == 'A')):
+    print ("You See The Movie")
+else:
+    print("You Don't See The Movie")
