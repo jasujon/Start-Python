@@ -66,3 +66,12 @@ print(myName.replace(" ","_"))
 print(myName.find("ye"))
 #output 4
 print(myName.find("a",3))
+
+
+#-----------------------------Center Method------------------------------ 
+string = "I Learn Python"
+print(string.center(16,"*"))
+#output : *I Learn Python*
+print(string.center(18,"*"))
+#output ; **I Learn Python**
+
