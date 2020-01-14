@@ -53,3 +53,16 @@ print(name.strip() + dots)
 lang1 = "Pyt     hon"
 print(lang1.replace(" " , ""))
 #output: Python
+
+
+#-------------------------- Replace Method & Find Method----------------------- 
+
+#Replace Method 
+myName = "Jubayed Alam"
+print(myName.replace(" ","_"))
+#output :   Jubayed_Alam
+
+#Find Method 
+print(myName.find("ye"))
+#output 4
+print(myName.find("a",3))
