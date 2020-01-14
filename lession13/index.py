@@ -24,16 +24,32 @@
 
 ##-----------------------Nested If-else StateMent-------------------- 
 
-warning_number = 50
-user_input = input("Guess A Number b/w 1 To 100 : ")
-user_input = int(user_input)     #string value convert integer
+# warning_number = 50
+# user_input = input("Guess A Number b/w 1 To 100 : ")
+# user_input = int(user_input)     #string value convert integer
 
-if(warning_number == user_input):
-    print("You Win !!!!!")
-else:
-    if(user_input < warning_number):
-        print("Too Low")
-    else:
-        print("Too High")
+# if(warning_number == user_input):
+#     print("You Win !!!!!")
+# else:
+#     if(user_input < warning_number):
+#         print("Too Low")
+#     else:
+#         print("Too High")
 
 
+##-----------------------And, Or Operator StateMent-------------------- 
+
+## And StateMent
+# name = "python"
+# age  = 20
+# if name == "python" and age == 20 :
+#     print("Condition True")
+# else:
+#     print("Condition False")
+
+# ##Or StateMent
+# if name == "python" or age == 20 :
+#     print("Condition True")
+# else:
+#     print("Condition False")
+    
