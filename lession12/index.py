@@ -19,7 +19,7 @@ print(name2.upper())
 #output  JUBAYED ALAM
 
 #title() method
-name3 = "JUBAYED ALAM"
+name3 = "JUBAYED ALAM" 
 print(name3.title())
 #output Jubayed Alam
 

@@ -53,9 +53,24 @@
 # else:
 #     print("Condition False")
     
-user_name =input ("Enter Your Name : ")
-user_age  = int(input("Enter Your Age : "))
-if(user_age >= 15 and (user_name[0] == 'a' or user_name[0] == 'A')):
-    print ("You See The Movie")
+# user_name =input ("Enter Your Name : ")
+# user_age  = int(input("Enter Your Age : "))
+# if(user_age >= 15 and (user_name[0] == 'a' or user_name[0] == 'A')):
+#     print ("You See The Movie")
+# else:
+#     print("You Don't See The Movie")
+
+
+##-----------------------If-elif-else statement--------------------  
+
+age = input("Please Type Your Age : ")
+age = int(age)
+
+if 0<age <=3:
+    print("Ticket Price : Free ")
+elif 3<age<=10:
+    print("Ticket Price : 150 TK ")
+elif 10< age <=60:
+    print("Ticket Price : 250 TK")
 else:
-    print("You Don't See The Movie")
+    print("Ticket Price : 200 TK")
