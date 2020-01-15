@@ -101,10 +101,22 @@
 
 ##-----------------------Infinite loop-------------------- 
 
-i = 0
-while i<=10:
-    print("Hello World")
-    # forget end by i = i+1
-while True :
-    print("Hello World")
+# i = 0
+# while i<=10:
+#     print("Hello World")
+#     # forget end by i = i+1
+# while True :
+#     print("Hello World")
 ##
+
+##-----------------------For loop-------------------- 
+
+# for i in range(10):
+#     print("Hello World")
+
+##sum from 1 to 10
+total = 0
+for i in range (1,10):
+    total += i
+print(total)
+#output : 45
