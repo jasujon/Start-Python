@@ -63,14 +63,22 @@
 
 ##-----------------------If-elif-else statement--------------------  
 
-age = input("Please Type Your Age : ")
-age = int(age)
+# age = input("Please Type Your Age : ")
+# age = int(age)
 
-if 0<age <=3:
-    print("Ticket Price : Free ")
-elif 3<age<=10:
-    print("Ticket Price : 150 TK ")
-elif 10< age <=60:
-    print("Ticket Price : 250 TK")
+# if 0<age <=3:
+#     print("Ticket Price : Free ")
+# elif 3<age<=10:
+#     print("Ticket Price : 150 TK ")
+# elif 10< age <=60:
+#     print("Ticket Price : 250 TK")
+# else:
+#     print("Ticket Price : 200 TK")
+
+
+##-----------------------in keyword--------------------  
+name = "Jubayed Alam"
+if 'a' in name :
+    print("A Is Present in Name")
 else:
-    print("Ticket Price : 200 TK")
+    print("Not Present")
