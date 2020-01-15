@@ -115,8 +115,25 @@
 #     print("Hello World")
 
 ##sum from 1 to 10
-total = 0
-for i in range (1,10):
-    total += i
-print(total)
+# total = 0
+# for i in range (1,10):
+#     total += i
+# print(total)
 #output : 45
+
+##-----------------------Break and Continue keyword-------------------- 
+
+#break keyword
+for i in range(1,11):
+    if i == 5 :
+        break
+    print(i)
+
+##Continue keyword
+#print 1 to 10 but not 5
+
+for i in range(1,11):
+    if i==5:
+        continue
+    print(i)
+#output :  1,2,3,4,6,7,8,9,10
