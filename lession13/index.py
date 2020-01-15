@@ -162,10 +162,32 @@
 
 ##-----------------------Step argument in range function --------------------
 
-for i in range (1,11,2):
-    print(i)
+# for i in range (1,11,2):
+#     print(i)
 #output :  1,3,5,7.9
 
-for i in range(10,1,-1):
-    print(i)
+# for i in range(10,1,-1):
+#     print(i)
 #output : 10,9,8,7,6,5,4,3,2,1
+
+##-----------------------For loop and string --------------------
+
+name = "Jubayed Alam"
+for i in name : 
+    print(i)
+#output
+#J
+#u
+#b
+#a
+#....m last argument
+
+num = input("Enter A Number : ")  ##suppose give :: 55
+total = 0
+for i in num :
+    total += int(i)
+    print(total)
+
+#output 
+#5
+#5
