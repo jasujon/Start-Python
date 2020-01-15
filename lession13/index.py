@@ -91,10 +91,20 @@
 
 ##-----------------------Sum of Numbers Program using while loop--------------------  
 
-total = 0
-i = 1
-while i<=10 :
-    total = total + i
-    i = i + 1
-print(total)
-#output 55
+# total = 0
+# i = 1
+# while i<=10 :
+#     total = total + i
+#     i = i + 1
+# print(total)
+# #output 55
+
+##-----------------------Infinite loop-------------------- 
+
+i = 0
+while i<=10:
+    print("Hello World")
+    # forget end by i = i+1
+while True :
+    print("Hello World")
+##
