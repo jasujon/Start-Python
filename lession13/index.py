@@ -77,8 +77,14 @@
 
 
 ##-----------------------in keyword--------------------  
-name = "Jubayed Alam"
-if 'a' in name :
-    print("A Is Present in Name")
-else:
-    print("Not Present")
+# name = "Jubayed Alam"
+# if 'a' in name :
+#     print("A Is Present in Name")
+# else:
+#     print("Not Present")
+
+##-----------------------While Loop--------------------  
+i = 1 
+while i<= 10 :
+    print("Hello World")
+    i = i+1
