@@ -84,7 +84,17 @@
 #     print("Not Present")
 
 ##-----------------------While Loop--------------------  
-i = 1 
-while i<= 10 :
-    print("Hello World")
-    i = i+1
+# i = 1 
+# while i<= 10 :
+#     print("Hello World")
+#     i = i+1
+
+##-----------------------Sum of Numbers Program using while loop--------------------  
+
+total = 0
+i = 1
+while i<=10 :
+    total = total + i
+    i = i + 1
+print(total)
+#output 55
