@@ -140,21 +140,32 @@
 
 ##-----------------------Number Guessing Game Using While Loof --------------------
 
-wining_number = 55
-guess = 1
-number = int(input("Guess A Number Between 1 to 100 : "))
-game_over = False
+# wining_number = 55
+# guess = 1
+# number = int(input("Guess A Number Between 1 to 100 : "))
+# game_over = False
 
-while not game_over : 
-    if number == wining_number:
-        print("You Win The Game")
-        game_over = True
-    else:
-        if number < wining_number:
-            print("Too Low ")
-            guess +=1
-            number=int(input("Guess Again : " ))
-        else:
-            print("Too High")
-            guess +=1
-            number=int(input("Guess Again : "))
+# while not game_over : 
+#     if number == wining_number:
+#         print("You Win The Game")
+#         game_over = True
+#     else:
+#         if number < wining_number:
+#             print("Too Low ")
+#             guess +=1
+#             number=int(input("Guess Again : " ))
+#         else:
+#             print("Too High")
+#             guess +=1
+#             number=int(input("Guess Again : "))
+
+
+##-----------------------Step argument in range function --------------------
+
+for i in range (1,11,2):
+    print(i)
+#output :  1,3,5,7.9
+
+for i in range(10,1,-1):
+    print(i)
+#output : 10,9,8,7,6,5,4,3,2,1
