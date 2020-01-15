@@ -124,16 +124,37 @@
 ##-----------------------Break and Continue keyword-------------------- 
 
 #break keyword
-for i in range(1,11):
-    if i == 5 :
-        break
-    print(i)
+# for i in range(1,11):
+#     if i == 5 :
+#         break
+#     print(i)
 
 ##Continue keyword
 #print 1 to 10 but not 5
 
-for i in range(1,11):
-    if i==5:
-        continue
-    print(i)
+# for i in range(1,11):
+#     if i==5:
+#         continue
+#     print(i)
 #output :  1,2,3,4,6,7,8,9,10
+
+##-----------------------Number Guessing Game Using While Loof --------------------
+
+wining_number = 55
+guess = 1
+number = int(input("Guess A Number Between 1 to 100 : "))
+game_over = False
+
+while not game_over : 
+    if number == wining_number:
+        print("You Win The Game")
+        game_over = True
+    else:
+        if number < wining_number:
+            print("Too Low ")
+            guess +=1
+            number=int(input("Guess Again : " ))
+        else:
+            print("Too High")
+            guess +=1
+            number=int(input("Guess Again : "))
