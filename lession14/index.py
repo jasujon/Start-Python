@@ -32,7 +32,21 @@
 
 #-----------------------------Show String Last Char --------------------------------- 
 
-def last_char(name):
-    return name[-1]
-print(last_char("Sujon"))
+# def last_char(name):
+#     return name[-1]
+# print(last_char("Sujon"))
 #output : n
+
+
+#-----------------------------Odd or Even Function --------------------------------- 
+
+def odd_even(num):
+    if num%2 == 0:
+        print("This is Even Number ")
+    else:
+        print("This is Odd Number")
+
+print(odd_even(7))
+#output : This is Odd Number
+print(odd_even(10))
+#output : This is Even Number
