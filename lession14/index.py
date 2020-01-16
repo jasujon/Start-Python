@@ -53,12 +53,42 @@
 
 #-----------------------------Define greatest By Function--------------------------------- 
 
-def greatest(a,b,c):
-    if a>b and b>c:
-        return a
-    elif b>a and b>c:
-        return b
-    else:
-        return c
-print(greatest(20,30,10))
+# def greatest(a,b,c):
+#     if a>b and b>c:
+#         return a
+#     elif b>a and b>c:
+#         return b
+#     else:
+#         return c
+# print(greatest(20,30,10))
 #output 30
+
+
+#-----------------------------Variable Scope--------------------------------- 
+
+def num() : 
+    x = 10
+    return x
+print(x)
+
+#output : Error
+x = 20
+def func():
+    x = 10   # local variable
+    return x
+
+print(func())
+print(x)
+#output : 10,20
+
+x =100
+def func():
+    global x
+    x = 10
+    return x
+
+print(x)
+print(func())
+print(x)
+
+#output : 100 10 10
