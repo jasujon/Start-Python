@@ -23,8 +23,16 @@
 
 #get user first Name
 
-def user_name(a,b):
-    return a + b
-firstName = input("Enter Your First Name : ")
-lastName  = input("Enter Your Last Name : ")
-print(user_name(firstName,lastName))
+# def user_name(a,b):
+#     return a + b
+# firstName = input("Enter Your First Name : ")
+# lastName  = input("Enter Your Last Name : ")
+# print(user_name(firstName,lastName))
+
+
+#-----------------------------Show String Last Char --------------------------------- 
+
+def last_char(name):
+    return name[-1]
+print(last_char("Sujon"))
+#output : n
