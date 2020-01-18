@@ -72,26 +72,37 @@
 #-------------------------Delete data from list------------------------------ 
 
 #delete last argument by pop() Method
-fruits = ['Mango','Banana','Grapes','Apple']
-fruits.pop()
-print(fruits)
-#output : ['Mango', 'Banana', 'Grapes']
+# fruits = ['Mango','Banana','Grapes','Apple']
+# fruits.pop()
+# print(fruits)
+# #output : ['Mango', 'Banana', 'Grapes']
 
-#delete position wise argument by pop() Method
-fruits = ['Mango','Banana','Grapes','Apple']
-fruits.pop(0)
-print(fruits)
-#output : ['Banana', 'Grapes', 'Apple']
+# #delete position wise argument by pop() Method
+# fruits = ['Mango','Banana','Grapes','Apple']
+# fruits.pop(0)
+# print(fruits)
+# #output : ['Banana', 'Grapes', 'Apple']
 
-#delete position wise argument by del() Method
-fruits = ['Mango','Banana','Grapes','Apple']
-del fruits[0]
-print(fruits)
-#output : ['Banana', 'Grapes', 'Apple']
+# #delete position wise argument by del() Method
+# fruits = ['Mango','Banana','Grapes','Apple']
+# del fruits[0]
+# print(fruits)
+# #output : ['Banana', 'Grapes', 'Apple']
 
 
-#delete Unknown Variable argument by remove() Method
+# #delete Unknown Variable argument by remove() Method
+# fruits = ['Mango','Banana','Grapes','Apple']
+# fruits.remove('Grapes')
+# print(fruits)
+# #output : ['Mango', 'Banana', 'Apple']
+
+
+#-------------------------In keyword with list------------------------------ 
+
 fruits = ['Mango','Banana','Grapes','Apple']
-fruits.remove('Grapes')
-print(fruits)
-#output : ['Mango', 'Banana', 'Apple']
+
+if 'Mango' in fruits:
+    print('Mango is Present')
+else:
+    print('Mango Not Present')
+#output : Mango is Present
