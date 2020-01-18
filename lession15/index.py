@@ -108,6 +108,12 @@
 #output : Mango is Present
 
 #-------------------------Count Method ------------------------------ 
-fruits = ['Mango','Banana','Grapes','Apple']
-print(fruits.count('Mango'))
+# fruits = ['Mango','Banana','Grapes','Apple']
+# print(fruits.count('Mango'))
 #output : 1
+
+#-------------------------Sort Method ------------------------------ 
+fruits = ['Mango','Banana','Grapes','Apple']
+fruits.sort()
+print(fruits)
+#output : ['Apple', 'Banana', 'Grapes', 'Mango']
