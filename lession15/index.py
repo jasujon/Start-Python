@@ -1,21 +1,39 @@
 #------------------------- Python List Intro------------------------------ 
 #rules for  making list 
 #int
-numbers = [1,2,3,4,5]
-print(numbers) 
-#output :  [ 1,2,3,4]
+# numbers = [1,2,3,4,5]
+# print(numbers) 
+# #output :  [ 1,2,3,4]
 
-#string
-names = ['Python','Php','javaScript']
-print(names)
-#output : ['Python', 'Php', 'javaScript'] 
+# #string
+# names = ['Python','Php','javaScript']
+# print(names)
+# #output : ['Python', 'Php', 'javaScript'] 
 
-#mix all datatype
-mixed = [1,2,'Python','javaScript',2.3,None]
-print(mixed)
-#output : [1, 2, 'Python', 'javaScript', 2.3, None]
+# #mix all datatype
+# mixed = [1,2,'Python','javaScript',2.3,None]
+# print(mixed)
+# #output : [1, 2, 'Python', 'javaScript', 2.3, None]
 
-#access Element
-mixed = [1,2,'Python','javaScript']
-print(mixed[1])
-#output: 2
+# #access Element
+# mixed = [1,2,'Python','javaScript']
+# print(mixed[1])
+# #output: 2
+
+
+#-------------------------Add data to list (Append Method)------------------------------ 
+#Append() Method 
+fruits = ['grapes','apple']
+fruits.append('Mango')
+print(fruits)
+#output: ['grapes', 'apple', 'Mango']
+
+#Real Life use Append Method
+fruits = []
+fruits.append('Mango')
+fruits.append('Grapes')
+fruits.append('Apple')
+fruits.append('Banana')
+print(fruits)
+#output : ['Mango', 'Grapes', 'Apple', 'Banana']
+
