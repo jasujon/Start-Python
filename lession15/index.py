@@ -46,8 +46,15 @@
 #output: ['Grapes', 'Mango', 'Banana']
 
 #-------------------------Concatenate Two List (+)------------------------------
+# fruits1 =['Mango','Banana']
+# fruits2 =['Grapes','Apple']
+# fruits = fruits1+fruits2
+# print(fruits)
+#output : ['Mango', 'Banana', 'Grapes', 'Apple']
+
+#-------------------------Extend() Method------------------------------ 
 fruits1 =['Mango','Banana']
 fruits2 =['Grapes','Apple']
-fruits = fruits1+fruits2
-print(fruits)
+fruits1.extend(fruits2)
+print(fruits1)
 #output : ['Mango', 'Banana', 'Grapes', 'Apple']
