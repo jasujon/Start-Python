@@ -61,8 +61,37 @@
 
 #-------------------------Append() Method------------------------------ 
 #like Multi List
-fruits1 =['Mango','Banana']
-fruits2 =['Grapes','Apple']
-fruits1.append(fruits2)
-print(fruits1)
+# fruits1 =['Mango','Banana']
+# fruits2 =['Grapes','Apple']
+# fruits1.append(fruits2)
+# print(fruits1)
 #output : ['Mango', 'Banana', ['Grapes', 'Apple']]
+
+
+
+#-------------------------Delete data from list------------------------------ 
+
+#delete last argument by pop() Method
+fruits = ['Mango','Banana','Grapes','Apple']
+fruits.pop()
+print(fruits)
+#output : ['Mango', 'Banana', 'Grapes']
+
+#delete position wise argument by pop() Method
+fruits = ['Mango','Banana','Grapes','Apple']
+fruits.pop(0)
+print(fruits)
+#output : ['Banana', 'Grapes', 'Apple']
+
+#delete position wise argument by del() Method
+fruits = ['Mango','Banana','Grapes','Apple']
+del fruits[0]
+print(fruits)
+#output : ['Banana', 'Grapes', 'Apple']
+
+
+#delete Unknown Variable argument by remove() Method
+fruits = ['Mango','Banana','Grapes','Apple']
+fruits.remove('Grapes')
+print(fruits)
+#output : ['Mango', 'Banana', 'Apple']
