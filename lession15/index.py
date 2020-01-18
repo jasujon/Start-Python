@@ -129,7 +129,14 @@
 
 
 #-------------------------Clear Method ------------------------------ 
-numbers = [9,8,7,6,5,4,3,2,1]
-numbers.clear()
-print(numbers)
+# numbers = [9,8,7,6,5,4,3,2,1]
+# numbers.clear()
+# print(numbers)
 #output : []
+
+
+#-------------------------Copy Method ------------------------------ 
+numbers = [9,8,7,6,5,4,3,2,1]
+numbers_copy=numbers.copy()
+print(numbers_copy)
+#output : [9, 8, 7, 6, 5, 4, 3, 2, 1]
