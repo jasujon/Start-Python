@@ -113,7 +113,16 @@
 #output : 1
 
 #-------------------------Sort Method ------------------------------ 
-fruits = ['Mango','Banana','Grapes','Apple']
-fruits.sort()
-print(fruits)
+# fruits = ['Mango','Banana','Grapes','Apple']
+# numbers = [9,8,7,6,5,4,3,2,1]
+# fruits.sort()
+# numbers.sort()
+# print(fruits)
+# print(numbers)
 #output : ['Apple', 'Banana', 'Grapes', 'Mango']
+#output : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+#-------------------------sorted Function ------------------------------ 
+numbers = [9,8,7,6,5,4,3,2,1]
+print(sorted(numbers))
+#output : [1, 2, 3, 4, 5, 6, 7, 8, 9]
