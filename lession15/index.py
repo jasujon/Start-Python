@@ -40,7 +40,14 @@
 #-------------------------More methods to add data (insert() Method)------------------------------
 
 #insert() Method
-fruits1 =['Mango','Banana']
-fruits1.insert(0,'Grapes')
-print(fruits1) 
+# fruits1 =['Mango','Banana']
+# fruits1.insert(0,'Grapes')
+# print(fruits1) 
 #output: ['Grapes', 'Mango', 'Banana']
+
+#-------------------------Concatenate Two List (+)------------------------------
+fruits1 =['Mango','Banana']
+fruits2 =['Grapes','Apple']
+fruits = fruits1+fruits2
+print(fruits)
+#output : ['Mango', 'Banana', 'Grapes', 'Apple']
