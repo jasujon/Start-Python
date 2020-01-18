@@ -53,8 +53,16 @@
 #output : ['Mango', 'Banana', 'Grapes', 'Apple']
 
 #-------------------------Extend() Method------------------------------ 
+# fruits1 =['Mango','Banana']
+# fruits2 =['Grapes','Apple']
+# fruits1.extend(fruits2)
+# print(fruits1)
+#output : ['Mango', 'Banana', 'Grapes', 'Apple']
+
+#-------------------------Append() Method------------------------------ 
+#like Multi List
 fruits1 =['Mango','Banana']
 fruits2 =['Grapes','Apple']
-fruits1.extend(fruits2)
+fruits1.append(fruits2)
 print(fruits1)
-#output : ['Mango', 'Banana', 'Grapes', 'Apple']
+#output : ['Mango', 'Banana', ['Grapes', 'Apple']]
