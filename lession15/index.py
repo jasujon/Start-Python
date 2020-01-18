@@ -99,10 +99,15 @@
 
 #-------------------------In keyword with list------------------------------ 
 
-fruits = ['Mango','Banana','Grapes','Apple']
+# fruits = ['Mango','Banana','Grapes','Apple']
 
-if 'Mango' in fruits:
-    print('Mango is Present')
-else:
-    print('Mango Not Present')
+# if 'Mango' in fruits:
+#     print('Mango is Present')
+# else:
+#     print('Mango Not Present')
 #output : Mango is Present
+
+#-------------------------Count Method ------------------------------ 
+fruits = ['Mango','Banana','Grapes','Apple']
+print(fruits.count('Mango'))
+#output : 1
