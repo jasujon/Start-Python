@@ -4,7 +4,7 @@
 #Tuples Store Any Datatype (like List)
 #Most important tuples are immutable, once tuples is created you cant update 
 
-example = ('one','two','three')     #this is a tuples
+# example = ('one','two','three')     #this is a tuples
 #now you cant no append , no insert , no pop , no remove
 #tuples are faster than list
 
@@ -14,3 +14,11 @@ example = ('one','two','three')     #this is a tuples
 #index
 #len function
 #slicing 
+
+
+#------------------------------Looping in Tuples---------------------------
+mixed = (2,45,6,2.9)
+
+for num in mixed : 
+    print(num)
+
