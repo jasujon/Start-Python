@@ -200,15 +200,30 @@
 
 
 #-------------------------Looping in list ------------------------------ 
-fruits = ['banana','kiwi','apple','banana''orange','apple','pear']
+# fruits = ['banana','kiwi','apple','banana''orange','apple','pear']
 
-#for loops 
-for fruit in fruits :
-    print(fruit)
+# #for loops 
+# for fruit in fruits :
+#     print(fruit)
 
 
-#while loops 
-i = 0 
-while i<len(fruits):
-    print(fruits[i])
-    i += 1 
+# #while loops 
+# i = 0 
+# while i<len(fruits):
+#     print(fruits[i])
+#     i += 1 
+
+
+#-------------------------List inside List ------------------------------ 
+matrix = [[1,2,3],[4,5,6],[7,8,9]]      #2d list
+# print(matrix[1])      #output : [4,5,6]
+
+for sublist in matrix :
+    for i in sublist : 
+        print([i])
+
+
+
+#for single position
+print(matrix[1][1])
+#output : 5
