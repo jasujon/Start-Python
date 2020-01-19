@@ -24,8 +24,16 @@
 
 #------------------------------Tuples With One Element--------------------------- 
 
-#num = (1) # its not a tuples
-num = (1,) # tuples
-#output <class 'tuple'>
-print(type(num))
-#output <class 'int'>
+# #num = (1) # its not a tuples
+# num = (1,) # tuples
+# #output <class 'tuple'>
+# print(type(num))
+# #output <class 'int'>
+
+
+#------------------------------Tuples Without Parenthesis--------------------------- 
+lang = 'Python','javaScript','Php','Laravel'
+# print(type(lang))
+#output : <class 'tuple'>
+print(lang)
+#output : ('Python', 'javaScript', 'Php', 'Laravel')
