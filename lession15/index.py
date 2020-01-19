@@ -143,19 +143,39 @@
 
 
 #-------------------------is vs equals------------------------------ 
-fruits1 = ['orange','apple','pear']
-fruits2 = ['orange','apple','pear']
-fruits3 = ['banana','kiwi','apple','banana']
+# fruits1 = ['orange','apple','pear']
+# fruits2 = ['orange','apple','pear']
+# fruits3 = ['banana','kiwi','apple','banana']
 
-#check by ==
-print(fruits1 == fruits3)       # == check just values
-#output : False
-print(fruits1 == fruits2)       # == check just values
-#output : True
+# #check by ==
+# print(fruits1 == fruits3)       # == check just values
+# #output : False
+# print(fruits1 == fruits2)       # == check just values
+# #output : True
 
 
-#check by is
-print(fruits1 is fruits3)       # is check just object area not values
-#output : False
-print(fruits1 is fruits2)       # is check just object area not values
-#output : False 
+# #check by is
+# print(fruits1 is fruits3)       # is check just object area not values
+# #output : False
+# print(fruits1 is fruits2)       # is check just object area not values
+# #output : False 
+
+#-------------------------join and split method------------------------------ 
+
+#split method  (String to List Convert)
+user_info = 'Jubayed 25'.split()
+print(user_info)
+#output : ['Jubayed', '25']
+
+
+name,age=input("Enter Your Name & Age ").split(',')
+print(name)
+print(age) 
+#output name,age
+
+
+#join Method   (list to string contert)
+
+user_info1 = ['Sultan','10']
+print(','.join(user_info1))
+#output : Sultan,10
