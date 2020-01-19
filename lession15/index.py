@@ -136,7 +136,26 @@
 
 
 #-------------------------Copy Method ------------------------------ 
-numbers = [9,8,7,6,5,4,3,2,1]
-numbers_copy=numbers.copy()
-print(numbers_copy)
+# numbers = [9,8,7,6,5,4,3,2,1]
+# numbers_copy=numbers.copy()
+# print(numbers_copy)
 #output : [9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+
+#-------------------------is vs equals------------------------------ 
+fruits1 = ['orange','apple','pear']
+fruits2 = ['orange','apple','pear']
+fruits3 = ['banana','kiwi','apple','banana']
+
+#check by ==
+print(fruits1 == fruits3)       # == check just values
+#output : False
+print(fruits1 == fruits2)       # == check just values
+#output : True
+
+
+#check by is
+print(fruits1 is fruits3)       # is check just object area not values
+#output : False
+print(fruits1 is fruits2)       # is check just object area not values
+#output : False 
