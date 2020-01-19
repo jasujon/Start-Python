@@ -215,15 +215,23 @@
 
 
 #-------------------------List inside List ------------------------------ 
-matrix = [[1,2,3],[4,5,6],[7,8,9]]      #2d list
-# print(matrix[1])      #output : [4,5,6]
+# matrix = [[1,2,3],[4,5,6],[7,8,9]]      #2d list
+# # print(matrix[1])      #output : [4,5,6]
 
-for sublist in matrix :
-    for i in sublist : 
-        print([i])
+# for sublist in matrix :
+#     for i in sublist : 
+#         print([i])
 
 
 
-#for single position
-print(matrix[1][1])
-#output : 5
+# #for single position
+# print(matrix[1][1])
+# #output : 5
+
+
+#-------------------------Min and max function------------------------------ 
+numbers = [9,8,7,6,5,4,3,2,1]
+print(min(numbers))
+#output:  1
+print(max(numbers))
+#output: 9
