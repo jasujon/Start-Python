@@ -40,7 +40,18 @@
 
 
 #------------------------------Tuples Unpacking---------------------------
-lang = ('Python','javaScript','Php','Laravel')
-lang1,lang2,lang3,lang4 =(lang)
-print(lang1)
-#output : Python
+# lang = ('Python','javaScript','Php','Laravel')
+# lang1,lang2,lang3,lang4 =(lang)
+# print(lang1)
+# #output : Python
+
+
+#------------------------------Function returning two values---------------------------
+
+def func(num1,num2):
+    add = num1 + num2
+    multiple = num1 * num2
+    return add,multiple
+
+print(func(2,3))
+#output (5, 6)
