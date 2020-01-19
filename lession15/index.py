@@ -162,20 +162,38 @@
 
 #-------------------------join and split method------------------------------ 
 
-#split method  (String to List Convert)
-user_info = 'Jubayed 25'.split()
-print(user_info)
-#output : ['Jubayed', '25']
+# #split method  (String to List Convert)
+# user_info = 'Jubayed 25'.split()
+# print(user_info)
+# #output : ['Jubayed', '25']
 
 
-name,age=input("Enter Your Name & Age ").split(',')
-print(name)
-print(age) 
-#output name,age
+# name,age=input("Enter Your Name & Age ").split(',')
+# print(name)
+# print(age) 
+# #output name,age
 
 
-#join Method   (list to string contert)
+# #join Method   (list to string contert)
 
-user_info1 = ['Sultan','10']
-print(','.join(user_info1))
-#output : Sultan,10
+# user_info1 = ['Sultan','10']
+# print(','.join(user_info1))
+# #output : Sultan,10
+
+
+#-------------------------List vs String------------------------------ 
+
+#string 
+#we cant change string Like Delete Add 
+lang = 'Python'
+lang1 = lang.title()
+print(lang1)
+#output : Python  ... 
+
+
+#List 
+## We can change everything like Add Delete 
+pro_lang = ['Python','javaScript','Php']
+pro_lang.pop()
+print(pro_lang)
+#output : ['Python', 'javaScript']
