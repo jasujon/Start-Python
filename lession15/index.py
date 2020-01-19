@@ -183,17 +183,32 @@
 
 #-------------------------List vs String------------------------------ 
 
-#string 
-#we cant change string Like Delete Add 
-lang = 'Python'
-lang1 = lang.title()
-print(lang1)
-#output : Python  ... 
+# #string 
+# #we cant change string Like Delete Add 
+# lang = 'Python'
+# lang1 = lang.title()
+# print(lang1)
+# #output : Python  ... 
 
 
-#List 
-## We can change everything like Add Delete 
-pro_lang = ['Python','javaScript','Php']
-pro_lang.pop()
-print(pro_lang)
-#output : ['Python', 'javaScript']
+# #List 
+# ## We can change everything like Add Delete 
+# pro_lang = ['Python','javaScript','Php']
+# pro_lang.pop()
+# print(pro_lang)
+# #output : ['Python', 'javaScript']
+
+
+#-------------------------Looping in list ------------------------------ 
+fruits = ['banana','kiwi','apple','banana''orange','apple','pear']
+
+#for loops 
+for fruit in fruits :
+    print(fruit)
+
+
+#while loops 
+i = 0 
+while i<len(fruits):
+    print(fruits[i])
+    i += 1 
