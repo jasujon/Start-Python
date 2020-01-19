@@ -17,8 +17,15 @@
 
 
 #------------------------------Looping in Tuples---------------------------
-mixed = (2,45,6,2.9)
+# mixed = (2,45,6,2.9)
 
-for num in mixed : 
-    print(num)
+# for num in mixed : 
+#     print(num)
 
+#------------------------------Tuples With One Element--------------------------- 
+
+#num = (1) # its not a tuples
+num = (1,) # tuples
+#output <class 'tuple'>
+print(type(num))
+#output <class 'int'>
