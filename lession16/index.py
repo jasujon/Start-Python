@@ -32,8 +32,15 @@
 
 
 #------------------------------Tuples Without Parenthesis--------------------------- 
-lang = 'Python','javaScript','Php','Laravel'
-# print(type(lang))
-#output : <class 'tuple'>
-print(lang)
-#output : ('Python', 'javaScript', 'Php', 'Laravel')
+# lang = 'Python','javaScript','Php','Laravel'
+# # print(type(lang))
+# #output : <class 'tuple'>
+# print(lang)
+# #output : ('Python', 'javaScript', 'Php', 'Laravel')
+
+
+#------------------------------Tuples Unpacking---------------------------
+lang = ('Python','javaScript','Php','Laravel')
+lang1,lang2,lang3,lang4 =(lang)
+print(lang1)
+#output : Python
