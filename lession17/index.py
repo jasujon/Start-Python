@@ -177,15 +177,32 @@
 
 #-------------------------get Method-------------------------------- 
 
-d = {'name' : 'Jubayed','age' : 'unknown' , 'language' : 'unknown'}
-# print(d['name'])
-#output : Jubayed
+# d = {'name' : 'Jubayed','age' : 'unknown' , 'language' : 'unknown'}
+# # print(d['name'])
+# #output : Jubayed
 
-#print(d['names'])
-#output : error (keyError)
+# #print(d['names'])
+# #output : error (keyError)
 
-# get method work error hanglaning
-print(d.get('name'))
-#output : Jubayed       #(No Error)
-print(d.get('names'))
-#output : None          # this time no error pace because we use get method
+# # get method work error hanglaning
+# print(d.get('name'))
+# #output : Jubayed       #(No Error)
+# print(d.get('names'))
+# #output : None          # this time no error pace because we use get method
+
+
+
+
+
+
+
+#-------------------------Word Counter Dictionary-------------------
+
+def word_count (s):
+    count = {}
+    for char in s : 
+        count[char] = s.count(char)
+    return count
+
+print(word_count('Sultan Alam'))
+#output :  {'S': 1, 'u': 1, 'l': 2, 't': 1, 'a': 2, 'n': 1, ' ': 1, 'A': 1, 'm': 1}
