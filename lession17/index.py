@@ -163,10 +163,29 @@
 
 #-------------------------fromkeys Method--------------------------------  
 
-#fromkeys method 
-#fromkeys manes same value
-#d = {'name' : 'unknown','age' = 'unknown' , 'language' : 'unknown'}
+# #fromkeys method 
+# #fromkeys manes same value
+# #d = {'name' : 'unknown','age' : 'unknown' , 'language' : 'unknown'}
 
-d = dict.fromkeys(['name','school','program'],'unknown')
-print(d)
-#output : {'name': 'unknown', 'school': 'unknown', 'program': 'unknown'}
+# d = dict.fromkeys(['name','school','program'],'unknown')
+# print(d)
+# #output : {'name': 'unknown', 'school': 'unknown', 'program': 'unknown'} 
+
+
+
+
+
+#-------------------------get Method-------------------------------- 
+
+d = {'name' : 'Jubayed','age' : 'unknown' , 'language' : 'unknown'}
+# print(d['name'])
+#output : Jubayed
+
+#print(d['names'])
+#output : error (keyError)
+
+# get method work error hanglaning
+print(d.get('name'))
+#output : Jubayed       #(No Error)
+print(d.get('names'))
+#output : None          # this time no error pace because we use get method
