@@ -97,15 +97,36 @@
 
 
 #--------------- Item Method ---------------------
+# user_info = {
+#     'name' : 'Sultan',
+#     'age'  :10,
+#     'fav_movies' : ['Motu-Patlu','Gopal Bar'],
+#     'fav_lang'  : ['Python','javaScript']
+# }
+
+# user_items = user_info.items()
+# print(user_items)
+# #output : dict_items([('name', 'Sultan'), ('age', 10), ('fav_movies', ['Motu-Patlu', 'Gopal Bar']), ('fav_lang', ['Python', 'javaScript'])])
+# print(type(user_items))
+# #output : <class 'dict_items'>
+
+
+
+
+
+
+#--------------- Add and delete data from dictionaries --------------------- 
 user_info = {
     'name' : 'Sultan',
-    'age'  :10,
-    'fav_movies' : ['Motu-Patlu','Gopal Bar'],
     'fav_lang'  : ['Python','javaScript']
 }
 
-user_items = user_info.items()
-print(user_items)
-#output : dict_items([('name', 'Sultan'), ('age', 10), ('fav_movies', ['Motu-Patlu', 'Gopal Bar']), ('fav_lang', ['Python', 'javaScript'])])
-print(type(user_items))
-#output : <class 'dict_items'>
+# add data one 
+user_info['fav_songs'] = ['song1','song2']
+print(user_info)
+#output ; {'name': 'Sultan', 'fav_lang': ['Python', 'javaScript'], 'fav_songs': ['song1', 'song2']}
+
+#Pop Method 
+deleted_user_info = user_info.pop('fav_lang')
+print(user_info)
+#output : {'name': 'Sultan', 'fav_songs': ['song1', 'song2']}
