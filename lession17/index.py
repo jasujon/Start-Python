@@ -116,17 +116,41 @@
 
 
 #--------------- Add and delete data from dictionaries --------------------- 
+# user_info = {
+#     'name' : 'Sultan',
+#     'fav_lang'  : ['Python','javaScript']
+# }
+
+# # add data one 
+# user_info['fav_songs'] = ['song1','song2']
+# print(user_info)
+# #output ; {'name': 'Sultan', 'fav_lang': ['Python', 'javaScript'], 'fav_songs': ['song1', 'song2']}
+
+# #Pop Method 
+# deleted_user_info = user_info.pop('fav_lang')
+# print(user_info)
+# #output : {'name': 'Sultan', 'fav_songs': ['song1', 'song2']}
+
+
+
+
+
+
+
+#-------------------------Update Dictionary-------------------------------- 
+ 
 user_info = {
     'name' : 'Sultan',
     'fav_lang'  : ['Python','javaScript']
 }
 
-# add data one 
-user_info['fav_songs'] = ['song1','song2']
-print(user_info)
-#output ; {'name': 'Sultan', 'fav_lang': ['Python', 'javaScript'], 'fav_songs': ['song1', 'song2']}
+#print(user_info)
+#output : {'name': 'Sultan', 'fav_lang': ['Python', 'javaScript']}
 
-#Pop Method 
-deleted_user_info = user_info.pop('fav_lang')
+more_info = {'name' : 'Jubayed' ,'Age' : 10}
+#print(more_info)
+#output : {'name': 'Jubayed', 'Age': 10}
+
+user_info.update(more_info)
 print(user_info)
-#output : {'name': 'Sultan', 'fav_songs': ['song1', 'song2']}
+#output : {'name': 'Jubayed', 'fav_lang': ['Python', 'javaScript'], 'Age': 10}
