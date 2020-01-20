@@ -59,35 +59,53 @@
 
 # #in Keyword (if key exist in dictionary or not exist )
 
+# user_info = {
+#     'name' : 'Sultan',
+#     'age'  :10,
+#     'fav_movies' : ['Motu-Patlu','Gopal Bar'],
+#     'fav_lang'  : ['Python','javaScript']
+# }
+# if 'name' in user_info :        # ii just check key name
+#     print('present')
+# else:
+#     print('not Present')
+# #output : present
+
+# #check if value exist in Dictionary
+# if 'Sultan' in user_info.values() :        # ii just check key name
+#     print('present')
+# else:
+#     print('not Present')
+# #output : present
+
+
+# # looping in Dictionary 
+# for i in user_info.values():
+#     print(i)
+
+
+# #get all keys name 
+# user_info_keys = user_info.keys()
+# print(user_info_keys)
+# #output : dict_keys(['name', 'age', 'fav_movies', 'fav_lang'])
+# print(type(user_info_keys))
+# #<class 'dict_keys'>
+
+
+
+
+
+
+#--------------- Item Method ---------------------
 user_info = {
     'name' : 'Sultan',
     'age'  :10,
     'fav_movies' : ['Motu-Patlu','Gopal Bar'],
     'fav_lang'  : ['Python','javaScript']
 }
-if 'name' in user_info :        # ii just check key name
-    print('present')
-else:
-    print('not Present')
-#output : present
 
-#check if value exist in Dictionary
-if 'Sultan' in user_info.values() :        # ii just check key name
-    print('present')
-else:
-    print('not Present')
-#output : present
-
-
-# looping in Dictionary 
-for i in user_info.values():
-    print(i)
-
-
-#get all keys name 
-user_info_keys = user_info.keys()
-print(user_info_keys)
-#output : dict_keys(['name', 'age', 'fav_movies', 'fav_lang'])
-print(type(user_info_keys))
-#<class 'dict_keys'>
-
+user_items = user_info.items()
+print(user_items)
+#output : dict_items([('name', 'Sultan'), ('age', 10), ('fav_movies', ['Motu-Patlu', 'Gopal Bar']), ('fav_lang', ['Python', 'javaScript'])])
+print(type(user_items))
+#output : <class 'dict_items'>
