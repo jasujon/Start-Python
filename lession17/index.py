@@ -139,18 +139,34 @@
 
 #-------------------------Update Dictionary-------------------------------- 
  
-user_info = {
-    'name' : 'Sultan',
-    'fav_lang'  : ['Python','javaScript']
-}
+# user_info = {
+#     'name' : 'Sultan',
+#     'fav_lang'  : ['Python','javaScript']
+# }
 
-#print(user_info)
-#output : {'name': 'Sultan', 'fav_lang': ['Python', 'javaScript']}
+# #print(user_info)
+# #output : {'name': 'Sultan', 'fav_lang': ['Python', 'javaScript']}
 
-more_info = {'name' : 'Jubayed' ,'Age' : 10}
-#print(more_info)
-#output : {'name': 'Jubayed', 'Age': 10}
+# more_info = {'name' : 'Jubayed' ,'Age' : 10}
+# #print(more_info)
+# #output : {'name': 'Jubayed', 'Age': 10}
 
-user_info.update(more_info)
-print(user_info)
-#output : {'name': 'Jubayed', 'fav_lang': ['Python', 'javaScript'], 'Age': 10}
+# user_info.update(more_info)
+# print(user_info)
+# #output : {'name': 'Jubayed', 'fav_lang': ['Python', 'javaScript'], 'Age': 10}
+
+
+
+
+
+
+
+#-------------------------fromkeys Method--------------------------------  
+
+#fromkeys method 
+#fromkeys manes same value
+#d = {'name' : 'unknown','age' = 'unknown' , 'language' : 'unknown'}
+
+d = dict.fromkeys(['name','school','program'],'unknown')
+print(d)
+#output : {'name': 'unknown', 'school': 'unknown', 'program': 'unknown'}
