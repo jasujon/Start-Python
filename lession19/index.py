@@ -64,6 +64,34 @@
 #output : [2, 4, 6, 8, 10]
 
 #List Comprehension
-even_num = [i for i in range(1,11) if i%2 == 0]
-print(even_num)
+# even_num = [i for i in range(1,11) if i%2 == 0]
+# print(even_num)
 #output : [2, 4, 6, 8, 10]
+
+
+
+
+
+
+
+
+
+
+#----------------------------List comprehension with if else-------------------------
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+#normal function
+new_num = []
+for i in numbers:
+    if i%2 == 0 :
+        new_num.append(i*2)
+    else:
+        new_num.append(-1)
+print(new_num)
+#output : [-1, 4, -1, 8, -1, 12, -1, 16, -1, 20]
+
+#List Comprehension
+new_list = [i*2 if(i%2 == 0) else -i for i in numbers]
+print(new_list)
+#output : [-1, 4, -3, 8, -5, 12, -7, 16, -9, 20]
