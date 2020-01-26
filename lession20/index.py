@@ -57,7 +57,38 @@
 
 # d = {1 : 'odd' , 2 : 'even'}
 
-odd_even = {i:('even' if i%2 == 0 else 'odd') for i in range (1,11)}
-print(odd_even)
+# odd_even = {i:('even' if i%2 == 0 else 'odd') for i in range (1,11)}
+# print(odd_even)
 
 #output : {1: 'odd', 2: 'even', 3: 'odd', 4: 'even', 5: 'odd', 6: 'even', 7: 'odd', 8: 'even', 9: 'odd', 10: 'even'}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-----------------------------Sets comprehension-----------------------------
+
+#random order change
+
+names = ['Sujon',"Jusbayed","Alam"]
+first = {name[0] for name in names}
+print(first)
+
+#output 1st time  = {'J', 'S', 'A'}
+# output 2nd time = {'A', 'J', 'S'}
