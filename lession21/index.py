@@ -75,15 +75,47 @@
 
 
 # loop with *args and normal function 
-def multiply_num(num,*args):
-    multiply = 1
-    print(num)       #output : 1
-    print (args)        #output : 2,3,1,5
-    for i in args:
-        multiply *= i 
-    return multiply
-print(multiply_num(1,2,3,1,5))
+# def multiply_num(num,*args):
+#     multiply = 1
+#     print(num)       #output : 1
+#     print (args)        #output : 2,3,1,5
+#     for i in args:
+#         multiply *= i 
+#     return multiply
+# print(multiply_num(1,2,3,1,5))
 #output : 6
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-----------------------------------*Args as argument-----------------------
+
+def multiply_num(*args):
+    multiply = 1
+    print (args)        #output : 2,3,1,5
+    for i in args:
+        multiply *= i 
+    return multiply
+num = [2,3,5]
+print(multiply_num(num))
+#output : [2, 3, 5]         # args cant work because we dont use args in argument
+print(multiply_num(*num))
+#output : 30
