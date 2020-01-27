@@ -29,10 +29,61 @@
 
 
 # * args loop function
-def all_total(*args):
-    total = 0
-    for num in args :
-        total  += num
-    return total
-print(all_total(1,2,3))
+# def all_total(*args):
+#     total = 0
+#     for num in args :
+#         total  += num
+#     return total
+# print(all_total(1,2,3))
 #output : 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-----------------------------------* args with normal parameter-----------------------
+
+# # loop with args
+# def multiply_num(*args):
+#     multiply = 1
+
+#     for i in args:
+#         multiply *= i 
+#     return(multiply)
+# print(multiply_num(1,2,3))
+# #output : 6
+
+
+
+# loop with *args and normal function 
+def multiply_num(num,*args):
+    multiply = 1
+    print(num)       #output : 1
+    print (args)        #output : 2,3,1,5
+    for i in args:
+        multiply *= i 
+    return multiply
+print(multiply_num(1,2,3,1,5))
+#output : 6
+
+
+
