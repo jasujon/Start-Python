@@ -152,16 +152,72 @@
 
 #kwargs as a parameter
 
-def func(**kwargs):
-    # print(kwargs)
-    # print(type(kwargs))
-    #output : <class 'dict'>
+# def func(**kwargs):
+#     # print(kwargs)
+#     # print(type(kwargs))
+#     #output : <class 'dict'>
 
-    for k,v in kwargs.items():
-        print(f"{k} : {v}")
-func(first_name = 'Jubayed' , last_name = 'Alam')
+#     for k,v in kwargs.items():
+#         print(f"{k} : {v}")
+# func(first_name = 'Jubayed' , last_name = 'Alam')
 
 #output : {'first_name': 'Jubayed', 'last_name': 'Alam'}     #data store as a dictionary
 
 # for output : first_name : Jubayed
                # last_name : Alam
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#---------------------Function with all type of parameters (mentain serial)-----------------
+
+
+#normal parameter 
+#def func(a): 
+
+#default parameter
+# def func(name = 'unknown' , age = 24):
+#     print(name,age)
+# func()
+#output : unknown 24
+
+
+
+
+
+# 1 . parameter
+# 2 . *args
+# 3 . default
+# 4 . **kwargs
+#if u want to use all that than you must mentain serial
+
+def func(name, *args, last_name='Alam' , **kwargs):
+    print(name)
+    print(args)
+    print(last_name)
+    print(kwargs)
+func('Jubayed', 1,2,3, a = 1, b = 2)
+
+#output :
+    # Jubayed
+    # (1, 2, 3)
+    # Alam
+    # {'a': 1, 'b': 2}
