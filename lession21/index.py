@@ -3,6 +3,7 @@
 
 #  *operator
 #  *args
+#data gather tuple
 
 
 #normal function 
@@ -108,14 +109,59 @@
 
 #-----------------------------------*Args as argument-----------------------
 
-def multiply_num(*args):
-    multiply = 1
-    print (args)        #output : 2,3,1,5
-    for i in args:
-        multiply *= i 
-    return multiply
-num = [2,3,5]
-print(multiply_num(num))
-#output : [2, 3, 5]         # args cant work because we dont use args in argument
-print(multiply_num(*num))
-#output : 30
+# def multiply_num(*args):
+#     multiply = 1
+#     print (args)        #output : 2,3,1,5
+#     for i in args:
+#         multiply *= i 
+#     return multiply
+# num = [2,3,5]
+# print(multiply_num(num))
+# #output : [2, 3, 5]         # args cant work because we dont use args in argument
+# print(multiply_num(*num))
+# #output : 30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-----------------------------------** Kwargs(kwargs = keyword arguments)-----------------------
+
+# **kwargs(double star argument)
+# kwargs (keyword argument)
+# data gather dictionary
+
+
+#kwargs as a parameter
+
+def func(**kwargs):
+    # print(kwargs)
+    # print(type(kwargs))
+    #output : <class 'dict'>
+
+    for k,v in kwargs.items():
+        print(f"{k} : {v}")
+func(first_name = 'Jubayed' , last_name = 'Alam')
+
+#output : {'first_name': 'Jubayed', 'last_name': 'Alam'}     #data store as a dictionary
+
+# for output : first_name : Jubayed
+               # last_name : Alam
