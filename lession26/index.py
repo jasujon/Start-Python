@@ -19,3 +19,49 @@
 # i.append(d)           # hear append is a method
 #
 #And i in class Object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-------------------------------- OOP Create Your First Class-----------------------------------
+#
+#
+#how to create an class
+#what is Init Method    # we also callled constructor in PHP
+#what are ATTRIBUTES , INSTANCE VARIABLES
+#how to create our object
+# 
+#  
+
+class Person:
+    def __init__(self, first_name,last_name,age):
+        #instance variable
+        self.first_name = first_name
+        self.last_name  = last_name
+        self.age        = age
+
+#create object
+
+p1 = Person('Jubayed','Alam',25)
+print(p1.first_name)
+#output : Jubayed
+p2 = Person('Israk','Jahan',17)
+print(p2.last_name)
+#output : jahan
