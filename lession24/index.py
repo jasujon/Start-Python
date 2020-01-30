@@ -64,17 +64,72 @@
 # #output : [1, 4, 9, 16, 25]             #square all the value
 
 
-def square(a):
-    return a**2
+# def square(a):
+#     return a**2
 
-l = [1,2,3,4,5]
+# l = [1,2,3,4,5]
 
-def my_map(func , l ):
-    new_list = []
-    for item in l:
-        new_list.append(func(item))
-    return new_list
+# def my_map(func , l ):
+#     new_list = []
+#     for item in l:
+#         new_list.append(func(item))
+#     return new_list
 
-print(my_map(square,l))
-#output : [1, 4, 9, 16, 25]
+# print(my_map(square,l))
+# #output : [1, 4, 9, 16, 25]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-----------------------------------Function returning function------------------------------
+
+# def outer_func():
+#     def inner_func():
+#         print("This is Inner Function..")
+#     return inner_func()     #when i return function
+# var = outer_func()
+#output : This is Inner Function..      # its not a function returning function
+
+
+def outer_func():
+    def inner_func():
+        print("This is Inner Function .. ")
+    return inner_func   # now don't return ()
+var = outer_func()
+#output: null
+
+var()
+#output : This is Inner Function ..
