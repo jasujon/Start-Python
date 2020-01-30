@@ -50,18 +50,81 @@
 # 
 #  
 
+# class Person:
+#     def __init__(self, first_name,last_name,age):
+#         #instance variable
+#         self.first_name = first_name
+#         self.last_name  = last_name
+#         self.age        = age
+
+# #create object
+
+# p1 = Person('Jubayed','Alam',25)
+# print(p1.first_name)
+# #output : Jubayed
+# p2 = Person('Israk','Jahan',17)
+# print(p2.last_name)
+# #output : jahan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#--------------------------------OOP Instance Methods (object)-----------------------------------
 class Person:
-    def __init__(self, first_name,last_name,age):
-        #instance variable
+    def __init__(self,first_name,last_name,age):
         self.first_name = first_name
         self.last_name  = last_name
         self.age        = age
 
-#create object
+    def full_name(self):
+        return f"{self.first_name} {self.last_name}"
 
 p1 = Person('Jubayed','Alam',25)
-print(p1.first_name)
-#output : Jubayed
 p2 = Person('Israk','Jahan',17)
-print(p2.last_name)
-#output : jahan
+
+print(p2.full_name())
+#output : Israk Jahan
