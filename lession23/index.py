@@ -227,22 +227,22 @@
 
 #------------------------------------any and all function----------------------------- 
 
-number1 = [2,4,6,8,10]
-number2 = [2,5,7,4,80]
+# number1 = [2,4,6,8,10]
+# number2 = [2,5,7,4,80]
 
-#all function 
-evens = []
-for num in number1 :
-    evens.append(num % 2 == 0)
-print(evens)
+# #all function 
+# evens = []
+# for num in number1 :
+#     evens.append(num % 2 == 0)
+# print(evens)
 
-#output : [True, True, True, True, True]
+# #output : [True, True, True, True, True]
 
-print(all([num % 2 == 0 for num in number1]))
-#output : True
+# print(all([num % 2 == 0 for num in number1]))
+# #output : True
 
 
 
-# any function
-print(any([num % 2 == 0 for num in number2]))
-#output : True
+# # any function
+# print(any([num % 2 == 0 for num in number2]))
+# #output : True
