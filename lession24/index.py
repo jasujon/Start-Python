@@ -124,12 +124,73 @@
 #output : This is Inner Function..      # its not a function returning function
 
 
-def outer_func():
-    def inner_func():
-        print("This is Inner Function .. ")
-    return inner_func   # now don't return ()
-var = outer_func()
-#output: null
+# def outer_func():
+#     def inner_func():
+#         print("This is Inner Function .. ")
+#     return inner_func   # now don't return ()
+# var = outer_func()
+# #output: null
 
-var()
+# var()
 #output : This is Inner Function ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-------------------Decorators Intro (enhance the functionality of other Function)---------------
+
+#Decorators = enhance the functionality of other Function
+
+
+#Decorators function
+def decorators_function(any_function):
+    def wrapper_function():
+        print('This is Awesome Function .. ')
+        any_function()
+    return wrapper_function
+
+#this is awesome function       
+def func1():
+    print('This is Function One')
+#func1()
+#output : This is Function One
+
+
+#this is awesome function 
+def func2():
+    print('This is Function Two')
+#func2()
+#output : This is Function Two
+
+var = decorators_function(func1)
+var()
+#output : This is Awesome Function ..
+        #This is Function One
