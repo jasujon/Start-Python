@@ -114,17 +114,76 @@
 
 
 #--------------------------------OOP Instance Methods (object)-----------------------------------
-class Person:
-    def __init__(self,first_name,last_name,age):
-        self.first_name = first_name
-        self.last_name  = last_name
-        self.age        = age
+# class Person:
+#     def __init__(self,first_name,last_name,age):
+#         self.first_name = first_name
+#         self.last_name  = last_name
+#         self.age        = age
 
-    def full_name(self):
-        return f"{self.first_name} {self.last_name}"
+#     def full_name(self):
+#         return f"{self.first_name} {self.last_name}"
 
-p1 = Person('Jubayed','Alam',25)
-p2 = Person('Israk','Jahan',17)
+# p1 = Person('Jubayed','Alam',25)
+# p2 = Person('Israk','Jahan',17)
 
-print(p2.full_name())
-#output : Israk Jahan
+# print(p2.full_name())
+# #output : Israk Jahan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#--------------------------------OOP Class Variable-----------------------------------
+
+class Circle:
+    pi = 3.14
+    def __init__(self,radius):
+        self.radius = radius
+
+    def calc_circumference(self):
+        return 2*Circle.pi*self.radius
+
+c = Circle(4)
+print (c.calc_circumference())
+#output: 25.12
+print(c.__dict__)
+#{'radius': 4}      # for known variable name
