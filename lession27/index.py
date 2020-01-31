@@ -224,11 +224,45 @@
 
 
 
-def func(a,b):
-    if (type (a) is int ) and (type(b) is int):
-        return a+b
-    raise TypeError('Please give me number')
-# print(func(5 , 5))
-# #output : 10
-print(func('5','5'))
+# def func(a,b):
+#     if (type (a) is int ) and (type(b) is int):
+#         return a+b
+#     raise TypeError('Please give me number')
+# # print(func(5 , 5))
+# # #output : 10
+# print(func('5','5'))
 #output : TypeError: Please give me number
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-----------------------------Try , Except : exception handling----------------------------------
+
+
+while True : 
+    try : 
+        age = int(input('Enter Your Age .. '))
+        break
+    except ValueError:
+        print('Invalid Input')
+
+if age < 10 :
+    print('You can\'t play play this game' )
+else:
+    print('You can play play this game' )
