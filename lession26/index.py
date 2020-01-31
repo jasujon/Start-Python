@@ -174,16 +174,16 @@
 
 #--------------------------------OOP Class Variable-----------------------------------
 
-class Circle:
-    pi = 3.14
-    def __init__(self,radius):
-        self.radius = radius
+# class Circle:
+#     pi = 3.14
+#     def __init__(self,radius):
+#         self.radius = radius
 
-    def calc_circumference(self):
-        return 2*Circle.pi*self.radius
+#     def calc_circumference(self):
+#         return 2*Circle.pi*self.radius
 
-c = Circle(4)
-print (c.calc_circumference())
-#output: 25.12
-print(c.__dict__)
-#{'radius': 4}      # for known variable name
+# c = Circle(4)
+# print (c.calc_circumference())
+# #output: 25.12
+# print(c.__dict__)
+# #{'radius': 4}      # for known variable name
