@@ -186,6 +186,49 @@
 
 
 #with key error
-d = {'name' : 'Israk'}
-print(d['age'])
+# d = {'name' : 'Israk'}
+# print(d['age'])
 #output : KeyError: 'age'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-----------------------------Raise errors----------------------------------
+
+# def func(a,b):
+#     return a+b
+# # print(func(2,3))
+# # #output : 5
+
+# #if we pass string 
+# print(func('5','5'))
+# #output : 55       # but we want to get string
+
+
+
+def func(a,b):
+    if (type (a) is int ) and (type(b) is int):
+        return a+b
+    raise TypeError('Please give me number')
+# print(func(5 , 5))
+# #output : 10
+print(func('5','5'))
+#output : TypeError: Please give me number
