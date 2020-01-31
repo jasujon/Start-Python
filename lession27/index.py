@@ -334,13 +334,13 @@
 
 #-----------------------------Custom Exception----------------------------------
 
-class NameToShortError(ValueError):
-    pass
+# class NameToShortError(ValueError):
+#     pass
 
-def validate (name):
-    if len(name) < 8 : 
-        raise NameToShortError('Name is Too Short')
+# def validate (name):
+#     if len(name) < 8 : 
+#         raise NameToShortError('Name is Too Short')
 
-username = input('Enter Your Name ')
-validate(username)
-print(f'Hello {username}')
+# username = input('Enter Your Name ')
+# validate(username)
+# print(f'Hello {username}')
