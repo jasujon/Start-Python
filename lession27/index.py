@@ -255,14 +255,51 @@
 #-----------------------------Try , Except : exception handling----------------------------------
 
 
-while True : 
-    try : 
-        age = int(input('Enter Your Age .. '))
-        break
-    except ValueError:
-        print('Invalid Input')
+# while True : 
+#     try : 
+#         age = int(input('Enter Your Age .. '))
+#         break
+#     except ValueError:
+#         print('Invalid Input')
 
-if age < 10 :
-    print('You can\'t play play this game' )
-else:
-    print('You can play play this game' )
+# if age < 10 :
+#     print('You can\'t play play this game' )
+# else:
+#     print('You can play play this game' )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-----------------------------Else finally with try except----------------------------------
+
+while True :
+    try:
+        number = int(input('Enter A Number .. '))
+    except ValueError :
+        print('Please Type Integer .. ')
+    except :
+        print('Unexpected Error ..')
+    else:
+        print(f'User Input : {number}')
+        break
+    
