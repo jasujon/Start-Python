@@ -292,14 +292,55 @@
 
 #-----------------------------Else finally with try except----------------------------------
 
-while True :
-    try:
-        number = int(input('Enter A Number .. '))
-    except ValueError :
-        print('Please Type Integer .. ')
-    except :
-        print('Unexpected Error ..')
-    else:
-        print(f'User Input : {number}')
-        break
+# while True :
+#     try:
+#         number = int(input('Enter A Number .. '))
+#     except ValueError :
+#         print('Please Type Integer .. ')
+#     except :
+#         print('Unexpected Error ..')
+#     else:
+#         print(f'User Input : {number}')
+#         break
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-----------------------------Custom Exception----------------------------------
+
+class NameToShortError(ValueError):
+    pass
+
+def validate (name):
+    if len(name) < 8 : 
+        raise NameToShortError('Name is Too Short')
+
+username = input('Enter Your Name ')
+validate(username)
+print(f'Hello {username}')
